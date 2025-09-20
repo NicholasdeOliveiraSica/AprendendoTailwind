@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "Montserrat";
+  line-height: 120%;
+}
+
+header {
+  background-color: #111;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section,
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+
+section {
+  border-bottom: 1px solid #555;
+}
+
+footer {
+  align-items: center;
+  text-align: center;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+.funcao {
+  font-size: 26px;
+}
+
+.habilidades {
+  display: flex;
+  gap: 40px;
+}
+
+.habilidade {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projetos {
+  display: flex;
+  gap: 20px;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* .sobre {
+  margin-bottom: 20px;
+} */
+
+/* footer {
+  padding: 40px;
+} */
+
+/* .habilidade {
+  background-color: #333;
+}
+
+.linguagem {
+  color: yellow;
+} */
+
+/* #linguagem {
+  color: blue;
+} */
