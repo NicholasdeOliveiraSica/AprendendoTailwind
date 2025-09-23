@@ -4,96 +4,105 @@
     <title>Página de Portfólio</title>
     <meta charset="UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
-  <body class="font-sans bg-neutral-800 text-white">
-    <header class="bg-black">
-      <h1 class="font-bold text-3xl">Portfólio - Diego XYZ</h1>
-      <p>Desenvolvedor WEB Full Stack</p>
+  <body class="font-[Montserrat] bg-neutral-800 text-white">
+
+    <header class="bg-neutral-900 px-9 py-6 flex justify-between items-center">
+      <h1 class="font-bold text-3xl h-4 flex items-center">Portfólio - Nicholas Sica</h1>
+      <p class="text-xl">Desenvolvedor WEB Full Stack</p>
     </header>
 
-    <section>
-      <h2>Sobre mim</h2>
-      <p>
-        Sou um dos instrutores de HTML, CSS e JavaScript da Hahtag e ensino
-        pessoas a sair do zero e a se desenvolverem na programação
+    <section class="p-10 flex flex-col gap-4 border-b border-neutral-500">
+      <h2 class="text-2xl font-bold">Sobre mim</h2>
+      <p class="pt-3">
+        Sou um dos jovem programador que busca encontrar uma oportunidade no mercado de trabalho da programação!
       </p>
     </section>
 
-    <section>
-      <h2>Habilidades</h2>
+    <section class="p-10 flex flex-col gap-5 border-b border-neutral-500">
+      <h2 class="text-2xl font-bold">Habilidades</h2>
 
-      <div>
-        <h3>Linguagens</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
+      <div class="flex gap-10">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-xl font-bold">Linguagens</h3>
+          <ul class="list-disc list-inside cursor-pointer">
+            <li class=" hover:marker:text-red-400">HTML</li>
+            <li class=" hover:marker:text-red-400">CSS</li>
+            <li class=" hover:marker:text-red-400">JavaScript</li>
+          </ul>
+        </div>
 
-      <div>
-        <h3>Tecnologias</h3>
-        <ol>
-          <li>React</li>
-          <li>Node</li>
-          <li>Express JS</li>
-          <li>Vite</li>
-          <li>SASS</li>
-          <li>Tailwind</li>
-        </ol>
-      </div>
-    </section>
-
-    <section>
-      <h2>Projetos</h2>
-
-      <div>
-        <h3>Réplica do Site do Google</h3>
-        <img
-          width="600"
-          src="../Imagens/google.png"
-          alt="Print do Projeto do Google"
-        />
-        <a target="_blank" href="https://www.youtube.com/watch?v=0Ba6PVHMa0A"
-          >Clique aqui para acessar</a
-        >
-      </div>
-
-      <div>
-        <h3>Réplica do Site do YouTube</h3>
-        <img
-          width="600"
-          src="../Imagens/youtube.png"
-          alt="Print do Projeto do YouTube"
-        />
-        <a target="_blank" href="https://www.youtube.com/live/w7sIMxxVELs"
-          >Clique aqui para acessar</a
-        >
-      </div>
-
-      <div>
-        <h3>Réplica da Página de Login da Hashtag</h3>
-        <img
-          width="600"
-          src="../Imagens/tela-login.png"
-          alt="Print do Projeto de Tela de Login"
-        />
-        <a target="_blank" href="https://www.youtube.com/watch?v=9xh-CHyjNYc"
-          >Clique aqui para acessar</a
-        >
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl font-bold ">Tecnologias</h3>
+          <ol class="list-decimal list-inside marker:font-bold cursor-pointer">
+            <li class="hover:marker:text-red-300">React</li>
+            <li class="hover:marker:text-sky-300">Node</li>
+            <li class="hover:marker:text-yellor-300">Express JS</li>
+            <li class="hover:marker:text-fuchsia-300">Vite</li>
+            <li class="hover:marker:text-gray-600">Styled Components</li>
+            <li class="hover:marker:text-emerald-300">Tailwind</li>
+          </ol>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <h2>Informações de contato</h2>
+    <section class="p-10 flex flex-col gap-4 border-b border-neutral-500">
+      <h2 class="text-2xl font-bold">Projetos</h2>
 
-      <div>
-        <p>E-mail: XXX@YYY.COM</p>
-        <p>Telefone: XX XXXXX-XXXX</p>
+      <article class="flex flex-row gap-5">
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl font-bold">Réplica do Site do Google</h3>
+          <img
+            class="hover:translate-1 duration-300"
+            width="600"
+            src="../Imagens/google.png"
+            alt="Print do Projeto do Google"
+          />
+          <a class="hover:underline hover:scale-103 duration-300 font-semibold" target="_blank" href="https://www.youtube.com/watch?v=0Ba6PVHMa0A"
+            >Clique aqui para acessar</a
+          >
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl font-bold">Réplica do Site do YouTube</h3>
+          <img
+            class="hover:translate-1 duration-300"
+            width="600"
+            src="../Imagens/youtube.png"
+            alt="Print do Projeto do YouTube"
+          />
+          <a class="hover:underline hover:scale-103 duration-300 font-semibold" target="_blank" href="https://www.youtube.com/live/w7sIMxxVELs"
+            >Clique aqui para acessar</a
+          >
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="text-xl font-bold">Réplica da Página de Login da Hashtag</h3>
+          <img
+            class="hover:translate-1 duration-300"
+            width="600"
+            src="../Imagens/tela-login.png"
+            alt="Print do Projeto de Tela de Login"
+          />
+          <a class="hover:underline hover:scale-103 duration-300 font-semibold" target="_blank" href="https://www.youtube.com/watch?v=9xh-CHyjNYc"
+            >Clique aqui para acessar</a
+          >
+        </div>
+      </article>
+    </section>
+
+    <footer class="pt-7 pb-5 flex justify-center items-center flex-col text-center bg-neutral-900">
+      <h2 class="text-2xl font-bold">Informações de contato</h2>
+
+      <div class="mt-5">
+        <p><a class="font-semibold">E-mail:</a> XXX@YYY.COM</p>
+        <p><a class="font-semibold">Telefone:</a> XX XXXXX-XXXX</p>
         <p>
-          Site:
-          <a target="_blank" href="https://www.hashtagtreinamentos.com"
+          <a class="font-semibold ">Site:</a>
+          <a  class="hover:underline hover:text-sky-300 duration-300 font-semibold" target="_blank" href="https://www.hashtagtreinamentos.com"
             >www.hashtagtreinamentos.com</a
           >
         </p>
