@@ -58,7 +58,9 @@
       src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
       alt="Google Logo">
 
-    <section class="gap-3 flex justify-center items-center h-12 min-w-146 border border-neutral-300 rounded-full">
+    <section 
+      onclick="if(event.target.tagName!=='TEXTAREA' && event.target.tagName!=='IMG'){document.getElementById('search').focus()}"
+      class="gap-3 flex justify-center items-center h-12 min-w-146 border border-neutral-300 rounded-full">
 
       <img 
         class="w-5"
@@ -67,21 +69,43 @@
 
       <textarea 
         class="w-71/100 focus-visible:outline-0 resize-none"
-        rows="1" aria-expanded="false"></textarea>
+        rows="1" aria-expanded="false"
+        id="search"></textarea>
 
       <div class="flex justify-center gap-3 items-center">
-        <img
-          class="w-5 h-3"
-          src="https://www.gstatic.com/inputtools/images/tia.png"
-          alt="Icone Teclado">
-        <img
-          class="w-6"
-          src="./assets/icone-microfone.svg"
-          alt="Icone Microfone">
-        <img
-          class="w-6"
-          src="assets/icone-camera.svg"
-          alt="Icone Câmera">
+
+        <div class="
+          hover:after:content-['Ferramentas_de_introdução']
+          after:absolute after:-translate-x-43/100 after:translate-y-4
+          after:text-sm/6 hover:after:bg-neutral-600 after:rounded
+          after:px-2 after:text-white">
+          <img
+            class="w-5 h-3 cursor-pointer"
+            src="https://www.gstatic.com/inputtools/images/tia.png"
+            alt="Icone Teclado">
+        </div>
+
+        <div class="
+          hover:after:content-['Pesquisa_por_voz']
+          after:absolute after:-translate-x-43/100 after:translate-y-3
+          after:text-sm/6 hover:after:bg-neutral-600 after:rounded
+          after:px-2 after:text-white">
+          <img
+            class="w-6 cursor-pointer"
+            src="./assets/icone-microfone.svg"
+            alt="Icone Microfone">
+        </div>
+
+        <div class="
+          hover:after:content-['Pesquisa_por_imagem']
+          after:absolute after:-translate-x-43/100 after:translate-y-3
+          after:text-sm/6 hover:after:bg-neutral-600 after:rounded
+          after:px-2 after:text-white">
+          <img
+            class="w-6 cursor-pointer"
+            src="assets/icone-camera.svg"
+            alt="Icone Câmera">
+        </div>
       </div>
 
     </section>
