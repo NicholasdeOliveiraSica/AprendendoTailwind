@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="overflow-hidden" lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -8,41 +8,139 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="">
+<body class="h-screen flex flex-col justify-between items-center">
 
-  <header class="">
-    <a href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a>
-    <a href="https://mail.google.com/mail/?authuser=0&ogbl">Imagens</a>
-    <img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png"></img>
-    <button>Entrar</button>
+  <header class="-mt-2 w-screen p-4 flex items-center justify-end gap-3">
+
+    <button 
+      class="text-gray-950 text-sm hover:underline" 
+      href="https://mail.google.com/mail/?authuser=0&ogbl">
+
+      Gmail
+    </button>
+
+    <button 
+      class="text-gray-950 text-sm hover:underline" 
+      href="https://mail.google.com/mail/?authuser=0&ogbl">
+
+      Imagens
+    </button>
+
+    <div class="
+      hover:after:content-['Google_Apps']
+      after:absolute after:top-14 after:text-white hover:after:bg-neutral-600
+      after:px-2 after:rounded after:text-sm/6 after:font-normal
+      cursor-pointer 
+      w-12 h-12 
+      hover:bg-neutral-100
+      flex items-center justify-center 
+      p-2 rounded-full">
+
+      <img
+        class="opacity-60"
+        src="https://ssl.gstatic.com/gb/images/bar/al-icon.png"/>
+    </div>
+
+    <button 
+      class="bg-blue-500 h-8 w-23 rounded text-white">
+
+      Entrar
+    </button>
+
   </header>
 
 
 
-  <main class="">
+  <main class="flex flex-col justify-between items-center gap-7">
+
     <img 
-      class="w-50"
-      src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
+      class="w-68"
+      src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
+      alt="Google Logo">
 
-    <div>
-
-      <img src="assets/icone-lupa.svg" alt="Icone Lupa" class="w-10">
+    <section class="gap-3 flex justify-center items-center h-12 min-w-146 border border-neutral-300 rounded-full">
 
       <img 
-        class="w-10"
-        src="https://www.gstatic.com/inputtools/images/tia.png" alt="Icone Teclado">
+        class="w-5"
+        src="assets/icone-lupa.svg" 
+        alt="Icone Lupa"> 
 
-      <img src="./assets/icone-microfone.svg" alt="Icone Microfone" class="w-10">
+      <textarea 
+        class="w-71/100 focus-visible:outline-0 resize-none"
+        rows="1" aria-expanded="false"></textarea>
 
-      <img src="assets/icone-camera.svg" alt="Icone Câmera" class="w-10">
+      <div class="flex justify-center gap-3 items-center">
+        <img
+          class="w-5 h-3"
+          src="https://www.gstatic.com/inputtools/images/tia.png"
+          alt="Icone Teclado">
+        <img
+          class="w-6"
+          src="./assets/icone-microfone.svg"
+          alt="Icone Microfone">
+        <img
+          class="w-6"
+          src="assets/icone-camera.svg"
+          alt="Icone Câmera">
+      </div>
 
-    </div>
+    </section>
+
+    <section>
+
+      <button>Pesquisa Google</button>
+      <button>Sinto-me com sorte</button>
+
+      <p>Disponibilizado pelo Google em: <a>Português (Brasil)</a></p>
+
+    </section>
+
+
   </main>
 
 
-
   <footer>
+    <section>
+      <p>Brasil</p>
+    </section>
 
+    <section>
+      <article>
+        <a 
+          href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+          Sobre
+        </a>
+        <a 
+          href="https://www.google.com/intl/pt-BR_br/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+          Publicidade
+        </a>
+        <a 
+          href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">
+          Negócios
+        </a>
+        <a 
+          href="https://google.com/search/howsearchworks/?fg=1">
+          Como funciona a Pesquisa
+        </a>
+
+      </article>
+
+      <article>
+
+        <a 
+          href="https://policies.google.com/privacy?hl=pt-BR&fg=1">
+          Privacidade
+        </a>
+        <a 
+          href="https://policies.google.com/terms?hl=pt-BR&fg=1">
+          Termos
+        </a>
+        <a 
+          href="chrome://settings/">
+          Configurações
+        </a>
+      </article>
+    </section>
   </footer>
 
 </body>
