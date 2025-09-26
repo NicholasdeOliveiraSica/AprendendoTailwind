@@ -8,23 +8,23 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="h-screen flex flex-col justify-between items-center">
+<body class="h-screen flex flex-col justify-between items-center font-sans">
 
   <header class="-mt-2 w-screen p-4 flex items-center justify-end gap-3">
 
-    <button 
-      class="text-gray-950 text-sm hover:underline" 
+    <a 
+      class="text-gray-950 text-sm hover:underline cursor-pointer" 
       href="https://mail.google.com/mail/?authuser=0&ogbl">
 
       Gmail
-    </button>
+    </a>
 
-    <button 
-      class="text-gray-950 text-sm hover:underline" 
-      href="https://mail.google.com/mail/?authuser=0&ogbl">
+    <a 
+      class="text-gray-950 text-sm hover:underline cursor-pointer" 
+      href="https://images.google.com/?hl=pt-br">
 
       Imagens
-    </button>
+    </a>
 
     <div class="
       hover:after:content-['Google_Apps']
@@ -42,8 +42,9 @@
     </div>
 
     <button 
-      class="bg-blue-500 h-8 w-23 rounded text-white">
-
+      class="bg-blue-500 h-8 w-23 rounded text-white text-sm cursor-pointer hover:bg-blue-600 hover:shadow-md"
+      onclick="window.location.href='https://accounts.google.com/ServiceLogin?hl=pt-PT&passive=true&continue=https://www.google.com/&ec=GAZAmgQ'">
+      
       Entrar
     </button>
 
@@ -60,7 +61,7 @@
 
     <section 
       onclick="if(event.target.tagName!=='TEXTAREA' && event.target.tagName!=='IMG'){document.getElementById('search').focus()}"
-      class="gap-3 flex justify-center items-center h-12 min-w-146 border border-neutral-300 rounded-full">
+      class=" hover:shadow-[0_0_5px_rgba(0,0,0,0.3)] gap-3 flex justify-center items-center h-12 min-w-146 border border-neutral-300 rounded-full">
 
       <img 
         class="w-5"
@@ -110,12 +111,14 @@
 
     </section>
 
-    <section>
+    <section class="w-80 flex flex-col text-sm text-[#3c4043] gap-6">
 
-      <button>Pesquisa Google</button>
-      <button>Sinto-me com sorte</button>
+      <div class="flex gap-2 justify-between">
+        <button class="bg-[#f8f9fa] w-38 h-10 rounded cursor-pointer hover:shadow-[0_1_1px_rgba(0,0,0,1)] hover:border hover:border-neutral-300">Pesquisa Google</button>
+        <button class="bg-[#f8f9fa] w-38 h-10 rounded cursor-pointer hover:shadow-[0_1_1px_rgba(0,0,0,1)] hover:border hover:border-neutral-300">Sinto-me com sorte</button>
+      </div>e
 
-      <p>Disponibilizado pelo Google em: <a>Português (Brasil)</a></p>
+      <p>Disponibilizado pelo Google em: <a class="text-[#1a0dab] cursor-pointer" href="https://www.google.com/preferences?hl=pt-BR">Português (Brasil)</a></p>
 
     </section>
 
